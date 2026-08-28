@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Event Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <h2>🎓 CampusEvents</h2>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="events.html">Events</a>
+
+            <a href="dashboard.html">
+                My Registrations
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<section class="registration-section">
+
+    <div class="registration-box">
+
+        <h1>Event Registration</h1>
+
+        <p id="selectedEvent"></p>
+
+
+        <form id="registrationForm">
+
+            <label>Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+            >
+
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label>College ID</label>
+
+            <input
+                type="text"
+                id="collegeId"
+                placeholder="Enter your college ID"
+                required
+            >
+
+
+            <label>Department</label>
+
+            <select id="department" required>
+
+                <option value="">
+                    Select Department
+                </option>
+
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>MECH</option>
+                <option>CIVIL</option>
+                <option>BCA</option>
+                <option>MBA</option>
+
+            </select>
+
+
+            <label>Year</label>
+
+            <select id="year" required>
+
+                <option value="">
+                    Select Year
+                </option>
+
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+
+            </select>
+
+
+            <label>Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter phone number"
+                required
+            >
+
+
+            <button type="submit" class="btn">
+                Register for Event
+            </button>
+
+        </form>
+
+
+        <p id="message"></p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 CampusEvents
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
